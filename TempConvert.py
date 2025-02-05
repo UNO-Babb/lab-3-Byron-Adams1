@@ -6,11 +6,14 @@
 
 def main():
   #Prompt the user for a Fahrenheit temperature
-  #Convert that temperature to celsius, rounding to 1 decimal percision
-  #Output converted temperature.
-  tempF = 80
+  tempF = input("Enter a fahrenheit temperature: ")
+  tempF= int(tempF)
 
-  tempC = tempF / 2
+  #Convert that temperature to celsius, rounding to 1 decimal precision
+  tempC = (tempF - 32) * 5/9
+  num = 3.1415926
+  tempC = round(tempC, 2) # rounds to two place
+  #Output converted temperature.
 
   print(tempF, "is ", tempC, "degrees celsius.")
 if __name__ == '__main__':
